@@ -14,14 +14,17 @@ import { AngularShopWwComponent } from '../projects/angular-shop-ww/angular-shop
 
 @NgModule({
     declarations: [
+        // Wrappers
         MainWrapperComponent,
         AngularShopQqWrapperComponent,
         AngularShopWwWrapperComponent,
         ReactShopEeWrapperComponent,
         ReactShopRrWrapperComponent,
+
+        // Components
+        HeaderComponent,
         AngularShopQqComponent,
         AngularShopWwComponent,
-        HeaderComponent,
         PageNotFoundComponent,
         AppComponent,
     ],
