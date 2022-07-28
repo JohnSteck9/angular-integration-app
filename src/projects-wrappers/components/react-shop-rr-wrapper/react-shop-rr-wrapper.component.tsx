@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, SimpleChanges, ViewChild } from '@angular/core';
 import * as React from 'react';
 import { createRoot, Root } from 'react-dom/client';
 import { ReactShopRrProject } from '../../../projects/react-shop-rr/ReactShopRr';
@@ -13,6 +13,10 @@ export class ReactShopRrWrapperComponent implements OnDestroy, AfterViewInit {
     @ViewChild(containerElementName, { static: true }) containerRef!: ElementRef;
 
     root: Root | undefined;
+
+    ngOnChanges(_: SimpleChanges): void {
+        this.render();
+    }
 
     ngAfterViewInit() {
         this.root = createRoot(this.containerRef.nativeElement);

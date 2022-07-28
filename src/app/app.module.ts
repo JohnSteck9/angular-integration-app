@@ -9,6 +9,8 @@ import { MainWrapperComponent } from '../projects-wrappers/components/main-wrapp
 import { HeaderComponent } from './shared/components/header/header.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AppComponent } from './components/app/app.component';
+import { AngularShopQqComponent } from '../projects/angular-shop-qq/angular-shop-qq/angular-shop-qq.component';
+import { AngularShopWwComponent } from '../projects/angular-shop-ww/angular-shop-ww/angular-shop-ww.component';
 
 @NgModule({
     declarations: [
@@ -17,6 +19,8 @@ import { AppComponent } from './components/app/app.component';
         AngularShopWwWrapperComponent,
         ReactShopEeWrapperComponent,
         ReactShopRrWrapperComponent,
+        AngularShopQqComponent,
+        AngularShopWwComponent,
         HeaderComponent,
         PageNotFoundComponent,
         AppComponent,
